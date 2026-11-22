@@ -345,23 +345,22 @@ h3 {
   object-position: center 22%;
 }
 
-.hero-top-cta {
+/* .hero-top-cta {
   position: relative;
   z-index: 2;
   display: flex;
   justify-content: flex-end;
   padding: 1.5rem;
-}
+} */
 
 .hero-bottom-box {
   position: relative;
-  z-index: 2;
   background-color: var(--color-green);
   color: var(--color-white);
   padding: 1.75rem 2rem;
-  margin: 0 1.25rem 1.25rem;
+  /* margin: 0 1.25rem 1.25rem; */
   border-radius: var(--radius-sm);
-  max-width: 580px;
+  max-width: 500px;
 }
 
 .hero-bottom-box p {
