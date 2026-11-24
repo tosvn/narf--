@@ -14,8 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let hasFocus = false;
 
     function showNextSlide() {
-      slides[activeSlide].classList.remove("is-active");
-      slides[activeSlide].setAttribute("aria-hidden", "true");
+      const leavingSlide = slides[activeSlide];
+      leavingSlide.classList.remove("is-active");
+      leavingSlide.classList.add("is-exiting");
+      leavingSlide.setAttribute("aria-hidden", "true");
+      window.setTimeout(() => leavingSlide.classList.remove("is-exiting"), 1000);
+
       activeSlide = (activeSlide + 1) % slides.length;
       slides[activeSlide].classList.add("is-active");
       slides[activeSlide].setAttribute("aria-hidden", "false");

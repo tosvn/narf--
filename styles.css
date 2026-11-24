@@ -936,6 +936,7 @@ h3 {
   overflow: hidden;
   border-radius: var(--radius-md);
   background: var(--color-cream);
+  perspective: 1400px;
 }
 
 .work-slideshow-slide {
@@ -944,15 +945,25 @@ h3 {
   display: grid;
   place-items: center;
   opacity: 0;
-  transform: scale(1.035);
+  transform: translateX(100%) rotateY(-12deg);
+  transform-origin: left center;
+  backface-visibility: hidden;
   transition:
-    opacity 900ms ease-in-out,
-    transform 1200ms cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 1000ms ease-in-out,
+    transform 1000ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .work-slideshow-slide.is-active {
+  z-index: 2;
   opacity: 1;
-  transform: scale(1);
+  transform: translateX(0) rotateY(0);
+}
+
+.work-slideshow-slide.is-exiting {
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-100%) rotateY(12deg);
+  transform-origin: right center;
 }
 
 .work-slideshow-slide img {
