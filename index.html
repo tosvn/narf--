@@ -86,29 +86,51 @@
       </div>
 
       <!-- Programme Pillars & SDG Goals -->
-      <div class="section-block">
+      <div class="section-block pillars-section">
         <div class="container">
-          <h2>Programme Pillars</h2>
+          <div class="pillars-heading">
+            <div>
+              <p class="pillars-eyebrow">HOW WE OPEN DOORS</p>
+              <h2>Programme Pillars</h2>
+            </div>
+            <p>Four connected pathways help young people explore their interests, build skills and connect with opportunity.</p>
+          </div>
           <div class="pillars-grid">
-            <div class="pillar-box">
+            <article class="pillar-box">
+              <div class="pillar-card-top">
+                <span class="pillar-number" aria-hidden="true">01</span>
+                <span class="pillar-track">Discover</span>
+              </div>
               <h3>STEAM education</h3>
               <p>School workshops, practical demonstrations, digital literacy, science and technology awareness.</p>
-            </div>
-            <div class="pillar-box">
+            </article>
+            <article class="pillar-box">
+              <div class="pillar-card-top">
+                <span class="pillar-number" aria-hidden="true">02</span>
+                <span class="pillar-track">Prepare</span>
+              </div>
               <h3>Career development and employability</h3>
               <p>Career talks, CV and interview workshops, workplace skills, career fairs.</p>
               <p>Internship and placement pathways, Employer engagement, placement preparation, internship matching and follow-up.</p>
-            </div>
-            <div class="pillar-box">
+            </article>
+            <article class="pillar-box">
+              <div class="pillar-card-top">
+                <span class="pillar-number" aria-hidden="true">03</span>
+                <span class="pillar-track">Build</span>
+              </div>
               <h3>Vocational and skills development</h3>
               <p>Short courses, practical skills, digital and transferable skills.</p>
-              <p>Entrepreneurship and youth development</p>
+              <p class="pillar-subtopic">Entrepreneurship and youth development</p>
               <p>Enterprise awareness, business basics, innovation challenges and mentoring.</p>
-            </div>
-            <div class="pillar-box">
+            </article>
+            <article class="pillar-box">
+              <div class="pillar-card-top">
+                <span class="pillar-number" aria-hidden="true">04</span>
+                <span class="pillar-track">Connect</span>
+              </div>
               <h3>Community outreach and education campaigns</h3>
               <p>Learning campaigns, school/community engagement and information sessions.</p>
-            </div>
+            </article>
           </div>
 
           <div class="accordion-box" id="sdgAccordion">
@@ -175,7 +197,7 @@
       </div>
 
       <!-- Connect With US -->
-      <div class="section-block">
+      <div class="section-block connect-section">
         <div class="container connect-grid">
           <div class="form-container">
             <h2>Connect with US</h2>
@@ -185,8 +207,8 @@
               <div class="field-group">
                 <label>Name <span class="req-note">(required)</span></label>
                 <div class="form-grid-2">
-                  <div><label for="hFirstName" style="font-size: 0.8rem; color: var(--color-muted);">First Name <span class="req-note">(required)</span></label><input type="text" id="hFirstName" required /></div>
-                  <div><label for="hLastName" style="font-size: 0.8rem; color: var(--color-muted);">Last Name <span class="req-note">(required)</span></label><input type="text" id="hLastName" required /></div>
+                  <div><label class="connect-sub-label" for="hFirstName">First Name <span class="req-note">(required)</span></label><input type="text" id="hFirstName" required /></div>
+                  <div><label class="connect-sub-label" for="hLastName">Last Name <span class="req-note">(required)</span></label><input type="text" id="hLastName" required /></div>
                 </div>
               </div>
               <div class="field-group"><label for="hEmail">Email <span class="req-note">(required)</span></label><input type="email" id="hEmail" required /></div>
@@ -223,11 +245,12 @@
 
           <div class="about-block about-story">
             <h2>OUR STORY</h2>
-            <p class="body-text">The Ngozi Arthur Richard Foundation (NARF) was established out of a belief that talent and potential exist in every community, but opportunity is not always equally accessible.</p>
-            <p class="body-text">Across many underserved communities, young people face barriers that limit their access to quality education, employment, entrepreneurship and personal development. These challenges can prevent talented individuals from achieving their aspirations and contributing fully to society.</p>
-            <p class="body-text">We believe that a young person's circumstances should never determine the limits of their future.</p>
-            <p class="body-text">NARF exists to help bridge this opportunity gap: through education, employability programmes, entrepreneurship development, scholarships, mentorship and community outreach, we aim to equip young people with the knowledge, confidence, skills and networks they need to build better futures.</p>
-
+            <div class="about-story-copy">
+              <p class="body-text">The Ngozi Arthur Richard Foundation (NARF) was established out of a belief that talent and potential exist in every community, but opportunity is not always equally accessible.</p>
+              <p class="body-text">Across many underserved communities, young people face barriers that limit their access to quality education, employment, entrepreneurship and personal development. These challenges can prevent talented individuals from achieving their aspirations and contributing fully to society.</p>
+              <p class="body-text">We believe that a young person's circumstances should never determine the limits of their future.</p>
+              <p class="body-text">NARF exists to help bridge this opportunity gap: through education, employability programmes, entrepreneurship development, scholarships, mentorship and community outreach, we aim to equip young people with the knowledge, confidence, skills and networks they need to build better futures.</p>
+            </div>
             <img class="about-story-image" src="./images/IMG-7.jpg" alt="NARF reading outreach with children">
           </div>
 
@@ -258,7 +281,7 @@
         <div class="container">
           <div class="work-hero-intro">
             <p class="work-hero-text">We organise programs, projects and placements for young people.</p>
-            <div class="cac-circle">Since 2020, registered with the CAC in 2024</div>
+            <div class="cac-badge">Since 2020, registered with the CAC in 2024</div>
           </div>
           <div class="work-hero-box">
             <img
@@ -305,70 +328,165 @@
 
     <!-- ==================== 4. OUR IMPACT ==================== -->
     <section id="view-impact" class="page-view">
-      <div class="section-block">
+      <header class="impact-hero">
+        <div class="container impact-hero-inner">
+          <div class="impact-hero-copy">
+            <p class="impact-eyebrow">OUR IMPACT</p>
+            <h1>Big possibilities<br />start with <em>being seen.</em></h1>
+            <p class="impact-hero-lead">Every workshop, conversation and creative challenge can help a young person see a new path forward. Here are some of the moments behind that work.</p>
+            <a class="impact-hero-link" href="#impact-stories">
+              Explore our stories <span aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+          <figure class="impact-hero-visual">
+            <img src="./images/IMG-23.jpg" alt="NARF participants and facilitators coming together after a community programme" />
+          </figure>
+        </div>
+        <div class="impact-hero-note" aria-hidden="true">REDUCING INEQUALITIES · TRANSFORMING LIVES</div>
+      </header>
+
+      <section class="impact-films section-block" id="impact-stories" aria-labelledby="impact-films-title">
         <div class="container">
-          <h1>Our Impact</h1>
-          <p class="lead-text">Highlights from our outreach campaigns, workshops, and community engagements.</p>
-
-          <div class="cards-grid-2">
-            <div class="info-card">
-              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="Book Reading outreach activity" />
-              <h3>Book Reading &amp; Literacy</h3>
-              <p class="body-text">Encouraging reading culture, literacy, and learning among students and young people.</p>
+          <div class="impact-section-heading">
+            <div>
+              <h2 id="impact-films-title">A closer look at the work</h2>
             </div>
+            <p>Real moments from learning spaces and community programmes—told in motion.</p>
+          </div>
 
-            <div class="info-card">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Climate Awareness and NARF Free Workshop" />
-              <h3>Climate Awareness &amp; NARF Free Workshop</h3>
-              <p class="body-text">Community awareness sessions and free workshops equipping youths with practical skills and knowledge.</p>
-            </div>
-
-            <div class="info-card">
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80" alt="Programmes and projects review" />
-              <h3>Programmes &amp; Projects</h3>
-              <p class="body-text">Tracking outreach reach, participant engagement, and progression toward impacting over 10,000 young people by 2037.</p>
-            </div>
-
-            <div class="info-card">
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80" alt="Youth mentorship and workshop session" />
-              <h3>Mentorship &amp; Career Guidance</h3>
-              <p class="body-text">Supporting young people in navigating their career paths, skills development, and future opportunities.</p>
-            </div>
+          <div class="impact-video-grid">
+            <article class="impact-video-card">
+              <div class="impact-video-frame">
+                <video controls playsinline preload="metadata" poster="./images/VIDEO-1-thumbnail.jpg" aria-label="Video story from a NARF learning programme">
+                  <source src="./images/VIDEO-1.mp4" type="video/mp4" />
+                  Your browser does not support embedded videos.
+                </video>
+              </div>
+              <div class="impact-video-caption">
+                <span>Learning in community</span>
+                <span class="impact-video-caption-line" aria-hidden="true"></span>
+              </div>
+            </article>
+            <article class="impact-video-card">
+              <div class="impact-video-frame">
+                <video controls playsinline preload="metadata" poster="./images/VIDEO-2-thumbnail.jpg" aria-label="Video story from a NARF youth programme">
+                  <source src="./images/VIDEO-2.mp4" type="video/mp4" />
+                  Your browser does not support embedded videos.
+                </video>
+              </div>
+              <div class="impact-video-caption">
+                <span>Young people, new possibilities</span>
+                <span class="impact-video-caption-line" aria-hidden="true"></span>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="impact-gallery-section section-block" aria-labelledby="impact-gallery-title">
+        <div class="container">
+          <div class="impact-gallery-heading">
+            <div>
+              <p class="impact-eyebrow">MOMENTS THAT MOVE US</p>
+              <h2 id="impact-gallery-title">Impact looks like people, together.</h2>
+            </div>
+            <p>From sharing ideas to showing up for one another, every moment is part of a bigger story.</p>
+          </div>
+
+          <div class="impact-gallery">
+            <figure class="impact-gallery-item impact-gallery-feature">
+              <img src="./images/IMG-19.jpg" alt="Students working together on a creative classroom activity" loading="lazy" />
+              <figcaption>Ideas take shape when young people learn together.</figcaption>
+            </figure>
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-20.jpg" alt="Two students focused on their classroom work" loading="lazy" />
+              <figcaption>Space to focus, learn and grow.</figcaption>
+            </figure>
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-22.jpg" alt="A facilitator supports students during a group activity" loading="lazy" />
+              <figcaption>Guidance that makes room for every voice.</figcaption>
+            </figure>
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-24.jpg" alt="Participants listening and sharing during a community session" loading="lazy" />
+              <figcaption>Showing up for each other.</figcaption>
+            </figure>
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-25.jpg" alt="A facilitator leading an interactive learning session" loading="lazy" />
+              <figcaption>Learning through conversation and curiosity.</figcaption>
+            </figure>
+          </div>
+          <div class="impact-gallery-fullbleed">
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-26.jpg" alt="A NARF facilitator presenting to participants" loading="lazy" />
+              <figcaption>New ideas, shared in the room.</figcaption>
+            </figure>
+            <figure class="impact-gallery-item">
+              <img src="./images/IMG-27.jpg" alt="Young people gathered for a NARF community programme" loading="lazy" />
+              <figcaption>Many voices. One community.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </section>
 
 
     <!-- ==================== 6. NEWS & UPDATES ==================== -->
     <section id="view-news" class="page-view">
-      <div class="section-block">
+      <div class="section-block news-section">
         <div class="container">
-          <h1>News &amp; Announcements</h1>
+          <header class="news-page-heading">
+            <div>
+              <p class="news-eyebrow">FROM THE FOUNDATION</p>
+              <h1>News &amp; Announcements</h1>
+            </div>
+            <p>Follow the programmes, opportunities and milestones shaping our work with young people.</p>
+          </header>
 
-          <div class="cards-grid-3" style="margin-top: 1.5rem;">
-            <article class="info-card">
-              <h3>Placement Training</h3>
-              <p class="body-text"><strong>November 21st and 28th 2026</strong></p>
-              <p class="body-text">Online</p>
-              <p class="body-text">INTERNS ARE BEING TRAINED FOR PLACEMENTS.</p>
-              <span class="pill-tag">IN PROGRESS</span>
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="news-card-top">
+                <span class="news-category">Training</span>
+                <span class="news-card-number" aria-hidden="true">01</span>
+              </div>
+              <h2>Placement Training</h2>
+              <p class="news-card-summary">Interns are being trained for placements.</p>
+              <div class="news-card-detail">
+                <span>Dates</span>
+                <strong>November 21st and 28th 2026</strong>
+              </div>
+              <div class="news-card-detail">
+                <span>Format</span>
+                <strong>Online</strong>
+              </div>
+              <div class="news-status news-status-active"><span aria-hidden="true"></span>In progress</div>
             </article>
 
-            <article class="info-card">
-              <h3>Impact Reporting</h3>
-              <p class="body-text"><strong>2027</strong></p>
-              <p class="body-text">Pending</p>
-              <p class="body-text">RECAP OF THE YEAR 2026</p>
-              <span class="pill-tag">1st quarter 2027</span>
+            <article class="news-card">
+              <div class="news-card-top">
+                <span class="news-category">Reporting</span>
+                <span class="news-card-number" aria-hidden="true">02</span>
+              </div>
+              <h2>Impact Reporting</h2>
+              <p class="news-card-summary">A recap of the year 2026.</p>
+              <div class="news-card-detail">
+                <span>Expected</span>
+                <strong>2027</strong>
+              </div>
+              <div class="news-status news-status-planned">Pending · 1st quarter 2027</div>
             </article>
 
-            <article class="info-card">
-              <h3>HIRING FOR INTERNS</h3>
-              <p class="body-text"><strong>6 months internship</strong></p>
-              <p class="body-text">Work, and Earn with NARF</p>
-              <p class="body-text">6 months internship to work with NARF!</p>
-              <span class="pill-tag">Opportunity - Intern with NARF (2027)</span>
+            <article class="news-card news-card-feature">
+              <div class="news-card-top">
+                <span class="news-category">Opportunity</span>
+                <span class="news-card-number" aria-hidden="true">03</span>
+              </div>
+              <h2>Intern with NARF</h2>
+              <p class="news-card-summary">Work and earn with NARF through a six-month internship.</p>
+              <div class="news-card-detail">
+                <span>Duration</span>
+                <strong>6 months</strong>
+              </div>
+              <div class="news-status news-status-opportunity">Internship opportunity · 2027</div>
             </article>
           </div>
         </div>
@@ -377,44 +495,84 @@
 
      <!-- ==================== 5. GET INVOLVED ==================== -->
     <section id="view-involved" class="page-view">
-      <div class="section-block">
-        <div class="container form-container">
-          <h1>GET INVOLVED</h1>
-          <p class="lead-text">To Volunteer, Donate, Partner and Enquiries , please fill out the form below!</p>
+       <div class="section-block involved-section">
+         <div class="container involved-page-container">
+           <header class="involved-hero">
+             <div class="involved-hero-copy">
+               <p class="involved-eyebrow">BE PART OF THE CHANGE</p>
+               <h1>Make room for <em>more possibility.</em></h1>
+               <p>Volunteer, donate, partner with us or send an enquiry. Your message is a great place to start.</p>
+             </div>
+             <figure class="involved-hero-image">
+               <img src="./images/IMG-17.jpg" alt="Young people taking part in a NARF programme" />
+               <figcaption>We move forward, together.</figcaption>
+             </figure>
+           </header>
 
-          <form id="involvedForm" novalidate>
-            <div class="field-group">
-              <label>Name <span class="req-note">(required)</span></label>
-              <div class="form-grid-2">
-                <div>
-                  <label for="iFirstName" style="font-size: 0.8rem; color: var(--color-muted);">First Name <span class="req-note">(required)</span></label>
-                  <input type="text" id="iFirstName" required />
-                </div>
-                <div>
-                  <label for="iLastName" style="font-size: 0.8rem; color: var(--color-muted);">Last Name <span class="req-note">(required)</span></label>
-                  <input type="text" id="iLastName" required />
-                </div>
-              </div>
-            </div>
-            <div class="field-group">
-              <label for="iEmail">Email <span class="req-note">(required)</span></label>
-              <input type="email" id="iEmail" required />
-            </div>
-            <div class="field-group">
-              <label for="iMessage">Message <span class="req-note">(required)</span></label>
-              <textarea id="iMessage" rows="5" required></textarea>
-            </div>
-            <div class="field-group">
-              <button type="submit" class="btn btn-green">SEND</button>
-            </div>
-            <div class="form-status" id="involvedStatus" role="status" aria-live="polite"></div>
-          </form>
+           <div class="involved-content">
+             <aside class="involved-aside">
+               <p class="involved-eyebrow">WAYS TO GET INVOLVED</p>
+               <h2>Bring what you can. Help make more possible.</h2>
+               <p>Tell us how you would like to connect with the foundation.</p>
 
-          <div class="photo-banner" style="margin-top: 2.5rem;">
-            <img
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80"
-              alt="Sustainable Development Goals youth event"
-            />
+               <ul class="involved-ways">
+                 <li>
+                   <span>01</span>
+                   <div>
+                     <h3>Volunteer</h3>
+                     <p>Share your time and skills.</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>02</span>
+                   <div>
+                     <h3>Donate</h3>
+                     <p>Support the work of NARF.</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>03</span>
+                   <div>
+                     <h3>Partner</h3>
+                     <p>Explore ways to work together.</p>
+                   </div>
+                 </li>
+               </ul>
+             </aside>
+
+             <div class="involved-form-card">
+               <p class="involved-eyebrow">SEND US A MESSAGE</p>
+               <h2>Let’s start a conversation.</h2>
+               <p class="involved-form-intro">Complete the form and tell us what you have in mind.</p>
+
+               <form id="involvedForm" novalidate>
+                 <div class="field-group">
+                   <label>Name <span class="req-note">(required)</span></label>
+                   <div class="form-grid-2">
+                     <div>
+                       <label for="iFirstName" style="font-size: 0.8rem; color: var(--color-muted);">First Name <span class="req-note">(required)</span></label>
+                       <input type="text" id="iFirstName" required />
+                     </div>
+                     <div>
+                       <label for="iLastName" style="font-size: 0.8rem; color: var(--color-muted);">Last Name <span class="req-note">(required)</span></label>
+                       <input type="text" id="iLastName" required />
+                     </div>
+                   </div>
+                </div>
+                 <div class="field-group">
+                   <label for="iEmail">Email <span class="req-note">(required)</span></label>
+                   <input type="email" id="iEmail" required />
+                </div>
+                 <div class="field-group">
+                   <label for="iMessage">Message <span class="req-note">(required)</span></label>
+                   <textarea id="iMessage" rows="5" required></textarea>
+                 </div>
+                 <div class="field-group">
+                   <button type="submit" class="btn btn-green">SEND MESSAGE <span aria-hidden="true">&rarr;</span></button>
+                 </div>
+                 <div class="form-status" id="involvedStatus" role="status" aria-live="polite"></div>
+               </form>
+             </div>
           </div>
         </div>
       </div>
