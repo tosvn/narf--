@@ -1736,6 +1736,14 @@ h3 {
   object-fit: contain;
 }
 
+.work-slideshow-slide img.work-slideshow-text-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .work-slideshow-slide {
     transition: none;
@@ -2198,6 +2206,10 @@ h3 {
 }
 
 @media (max-width: 820px) {
+  .work-slideshow-slide img:not(.work-slideshow-text-image) {
+    object-fit: fill;
+  }
+
   .pillars-heading {
     align-items: flex-start;
     flex-direction: column;
