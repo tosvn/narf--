@@ -1740,11 +1740,11 @@ h3 {
   object-fit: contain;
 }
 
-.work-slideshow-slide img.work-slideshow-text-image {
+.work-slideshow-text-slide img {
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: contain;
 }
 
@@ -2210,7 +2210,7 @@ h3 {
 }
 
 @media (max-width: 820px) {
-  .work-slideshow-slide img:not(.work-slideshow-text-image) {
+  .work-slideshow-slide:not(.work-slideshow-text-slide) img {
     object-fit: fill;
   }
 
