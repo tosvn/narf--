@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!prefersReducedMotion && "IntersectionObserver" in window) {
     const revealSelector = [
       ".home-hero-section",
-      ".section-block > .container",
+      ".section-block > .container:not(.about-content)",
+      "#view-about .about-hero-image",
+      "#view-about .about-content > *",
       ".work-hero-intro",
       ".work-hero-box",
       ".cards-grid-2 > .info-card",
