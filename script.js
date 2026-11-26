@@ -111,6 +111,17 @@ document.addEventListener("DOMContentLoaded", () => {
     startSlideshow();
   }
 
+  const impactVideos = document.querySelectorAll(".impact-video-grid video");
+  impactVideos.forEach((video) => {
+    video.addEventListener("play", () => {
+      impactVideos.forEach((otherVideo) => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+
   function closeMenu() {
     if (!mobileMenuBtn || !mobileDrawer) return;
     mobileMenuBtn.classList.remove("open");
